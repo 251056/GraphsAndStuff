@@ -1,15 +1,28 @@
-
 import './App.css';
-import LineChartGroup from "./components/LineChartGroup";
+import BarGraph from "./components/BarGraph";
+import { Col, Row, Container } from 'react-bootstrap';
+import ClockGame from './components/ClockGame';
 
 function App() {
   return (
     <div className="App">
-      
 
-   <div>
-     <LineChartGroup />
-   </div>
+
+      <div>
+        <Container fluid className='mainContent'>
+          <Row>
+
+            <Col md={6}>
+              <ClockGame />
+            </Col>
+
+            <Col md={6}>
+              <BarGraph />
+            </Col>
+          </Row>
+        </Container>
+
+      </div>
 
     </div>
   );
